@@ -1,0 +1,313 @@
+
+<html>
+    <head>
+        <title
+>Barbie's Dreamhouse</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            h1 {
+                text-align: center;
+                color: #ff69b4; /* Barbie pink */
+            }
+            p {
+                text-align: center;
+                color: #e75480; /* A softer pink */
+            }
+            /* Example CSS for cool Barbie-style images */
+.barbie-img {
+  width: 300px;
+  border: 5px solid #ff69b4;
+  border-radius: 30px;
+  box-shadow: 0 8px 32px #ffb6d5;
+  margin: 20px;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.barbie-img:hover {
+  transform: scale(1.08) rotate(-3deg);
+  box-shadow: 0 16px 48px #e75480;
+  filter: brightness(1.1) saturate(1.3);
+}
+.barbie-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.barbie-img {
+  width: 250px;
+  border: 5px solid #ff69b4;
+  border-radius: 30px;
+  box-shadow: 0 8px 32px #ffb6d5;
+  transition: transform 0.4s, box-shadow 0.4s;
+  background: #fff0f6;
+  object-fit: cover;
+}
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(135deg, #ff69b4 0%, #ffe4ec 100%);
+  color: #e75480;
+  margin: 0;
+  padding: 0;
+}
+
+.barbie-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ff69b4;
+  text-shadow: 0 0 10px #fff0f6, 0 0 20px #ff69b4;
+  margin-top: 30px;
+}
+
+.barbie-desc {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  background: #fff0f6;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #d72660;
+}
+
+.barbie-menu {
+  background: #ff69b4;
+  padding: 10px 0;
+  box-shadow: 0 4px 12px #ffb6d5;
+}
+
+.barbie-menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.barbie-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.barbie-menu a:hover {
+  color: #ffe4ec;
+  text-shadow: 0 0 8px #fff0f6;
+}
+
+.barbie-sidebar {
+  position: fixed;
+  left: 0;
+  top: 70px;
+  width: 200px;
+  background: #ffe4ec;
+  border-right: 4px solid #ff69b4;
+  height: 100%;
+  padding: 30px 15px;
+  box-shadow: 4px 0 16px #ffb6d5;
+  z-index: 100;
+}
+
+.barbie-sidebar h3 {
+  color: #e75480;
+  margin-bottom: 20px;
+}
+
+.barbie-sidebar button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background: #ff69b4;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.barbie-sidebar button:hover {
+  background: #e75480;
+}
+        </style>
+    </head>
+<body>
+<h1 class="barbie-title">Barbie's Dreamhouse</h1>
+<p class="barbie-desc">
+  <strong>Imagination</strong> comes to life in Barbie's Dreamhouse! <br>
+  Explore <span class="highlight">vibrant rooms</span>, <span class="highlight">stylish furniture</span>, and <span class="highlight">endless possibilities</span> for play.
+</p>
+<h1>Barbie</h1>
+<p>Barbie's dreamhouse.</p>
+<nav class="barbie-menu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Rooms</a></li>
+    <li><a href="#">Dress Up</a></li>
+    <li><a href="#">Party</a></li>
+    <li><a href="#">Kitchen</a></li>
+  </ul>
+</nav>
+
+<script>
+// Set a Barbie-pink background
+document.body.style.background = "linear-gradient(135deg, #ff69b4 0%, #ffe4ec 100%)";
+
+// Make all text a vibrant pink
+document.body.style.color = "#e75480";
+
+// Add a fun border to all images
+document.querySelectorAll('img').forEach(img => {
+  img.style.border = "5px solid #ff69b4";
+  img.style.borderRadius = "20px";
+});
+
+// Add a glitter effect to all headings
+document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(h => {
+  h.style.textShadow = "0 0 10px #fff0f6, 0 0 20px #ff69b4";
+});
+
+// Optionally, add some animated hearts floating
+const heart = document.createElement('div');
+heart.innerHTML = "&#10084;";
+heart.style.position = "fixed";
+heart.style.fontSize = "2rem";
+heart.style.color = "#ff69b4";
+heart.style.top = "10px";
+heart.style.right = "10px";
+heart.style.animation = "float 2s infinite alternate";
+document.body.appendChild(heart);
+
+const style = document.createElement('style');
+style.innerHTML = `
+@keyframes float {
+  from { transform: translateY(0); }
+  to { transform: translateY(-20px); }
+}
+`;
+document.head.appendChild(style);
+
+
+const message = "Barbie's dreamhouse is a place where imagination comes to life. It's filled with vibrant colors, stylish furniture, and endless possibilities for play. From the living room to the kitchen, every corner of Barbie's dreamhouse is designed for fun and creativity. Whether hosting a party or enjoying a quiet evening, Barbie's dreamhouse is the perfect setting for all her adventures.";
+
+// Create a new div for the message
+const messageDiv = document.createElement('div');
+messageDiv.textContent = message;
+
+// Style the message to match the Barbie theme
+messageDiv.style.background = "#ffe4ec";
+messageDiv.style.color = "#e75480";
+messageDiv.style.padding = "20px";
+messageDiv.style.margin = "30px auto";
+messageDiv.style.borderRadius = "15px";
+messageDiv.style.maxWidth = "600px";
+messageDiv.style.fontSize = "1.2rem";
+messageDiv.style.boxShadow = "0 4px 20px #ffb6d5";
+
+// Add the message to the top of the page
+document.body.prepend(messageDiv);
+// Add this script at the end of your HTML file or in a <script> tag
+
+document.querySelectorAll('.barbie-img').forEach(img => {
+  img.addEventListener('mouseenter', function(e) {
+    for (let i = 0; i < 10; i++) {
+      const sparkle = document.createElement('span');
+      sparkle.textContent = '✨';
+      sparkle.style.position = 'absolute';
+      sparkle.style.left = (e.pageX - img.offsetLeft + Math.random() * 100 - 50) + 'px';
+      sparkle.style.top = (e.pageY - img.offsetTop + Math.random() * 60 - 30) + 'px';
+      sparkle.style.fontSize = (Math.random() * 16 + 16) + 'px';
+      sparkle.style.opacity = 1;
+      sparkle.style.pointerEvents = 'none';
+      sparkle.style.transition = 'opacity 1s, transform 1s';
+      sparkle.style.transform = `scale(${Math.random() + 0.5}) rotate(${Math.random() * 360}deg)`;
+      img.parentElement.style.position = 'relative';
+      img.parentElement.appendChild(sparkle);
+
+      setTimeout(() => {
+        sparkle.style.opacity = 0;
+        sparkle.style.transform += ' translateY(-30px)';
+      }, 100);
+
+      setTimeout(() => {
+        sparkle.remove();
+      }, 1100);
+    }
+  });
+});
+// Add this script at the end of your HTML file or in a <script> tag
+
+document.querySelectorAll('.barbie-img').forEach(img => {
+  img.addEventListener('click', function() {
+    img.style.transition = 'transform 0.1s';
+    img.style.transform = 'rotate(-8deg) scale(1.1)';
+    setTimeout(() => {
+      img.style.transform = 'rotate(8deg) scale(1.1)';
+      setTimeout(() => {
+        img.style.transform = 'rotate(0deg) scale(1)';
+      }, 100);
+    }, 100);
+  });
+});
+// ...existing code...
+
+// Function to create a floating heart at a random position
+function createFloatingHeart() {
+  const heart = document.createElement('div');
+  heart.innerHTML = "&#10084;";
+  heart.style.position = "fixed";
+  heart.style.fontSize = (Math.random() * 1.5 + 1.5) + "rem";
+  heart.style.color = "#ff69b4";
+  heart.style.top = Math.random() * 80 + "%";
+  heart.style.left = Math.random() * 90 + "%";
+  heart.style.pointerEvents = "none";
+  heart.style.animation = "float 2.5s infinite alternate";
+  document.body.appendChild(heart);
+
+  // Remove the heart after some time to avoid clutter
+  setTimeout(() => {
+    heart.remove();
+  }, 5000);
+}
+
+// Create multiple floating hearts
+for (let i = 0; i < 8; i++) {
+  setTimeout(createFloatingHeart, i * 400);
+}
+
+// Optionally, keep adding hearts every few seconds for a continuous effect
+setInterval(createFloatingHeart, 2000);
+
+
+
+</script>
+<div class ="barbie-gallery">
+<img src="images/barbie1.webp" alt="Barbie Dreamhouse" class="barbie-img">
+<img src="images/barbie2.jpg" alt="Barbie Party" class="barbie-img">
+<img src="images/barbie3.jpg" alt="Barbie Party" class="barbie-img">
+<img src="images/barbie4.jpg" alt="Barbie Party" class="barbie-img">
+
+<img src="images/barbie5.jpg" alt="Barbie Party" class="barbie-img">
+</body>
+</html>
+</div>
+
+
+</body>
+</html>
